@@ -1,0 +1,10 @@
+def bubble(L):
+size = len(L)-1
+for i in range(size):
+for j in range(size-i):
+if L[j] > L[j+1]:
+L[j],L[j+1] = L[j+1],L[j]
+
+L = [56,23,100,90,45]
+bubble(L)
+print(L)
